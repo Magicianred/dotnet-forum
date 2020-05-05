@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grace" Version="7.1.0" />
+    <PackageReference Include="Grace.AspNetCore.Hosting" Version="7.0.1" />
+    <PackageReference Include="Grace.AspNetCore.MVC" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotnetForum.Contracts\DotnetForum.Contracts.csproj" />
+    <ProjectReference Include="..\DotnetForum.Models\DotnetForum.Models.csproj" />
+    <ProjectReference Include="..\DotnetForum.Payloads\DotnetForum.Payloads.csproj" />
+    <ProjectReference Include="..\DotnetForum.Services\DotnetForum.Services.csproj" />
+  </ItemGroup>
+
+
+</Project>
