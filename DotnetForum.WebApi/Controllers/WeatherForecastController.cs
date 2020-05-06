@@ -1,4 +1,4 @@
-﻿using DotnetForum.Contracts;
+﻿using DotnetForum.Contracts.Services;
 using DotnetForum.Payloads;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;

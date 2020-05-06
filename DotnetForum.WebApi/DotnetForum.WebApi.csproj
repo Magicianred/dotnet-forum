@@ -8,14 +8,23 @@
     <PackageReference Include="Grace" Version="7.1.0" />
     <PackageReference Include="Grace.AspNetCore.Hosting" Version="7.0.1" />
     <PackageReference Include="Grace.AspNetCore.MVC" Version="7.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\DotnetForum.Contracts\DotnetForum.Contracts.csproj" />
     <ProjectReference Include="..\DotnetForum.Models\DotnetForum.Models.csproj" />
     <ProjectReference Include="..\DotnetForum.Payloads\DotnetForum.Payloads.csproj" />
-    <ProjectReference Include="..\DotnetForum.Services\DotnetForum.Services.csproj" />
   </ItemGroup>
 
 
+  <ItemGroup>
+    <Folder Include="Database\" />
+    <Folder Include="Services\" />
+    <Folder Include="Repository\" />
+  </ItemGroup>
 </Project>

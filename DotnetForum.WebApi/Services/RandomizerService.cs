@@ -1,8 +1,8 @@
-﻿using DotnetForum.Contracts;
+﻿using DotnetForum.Contracts.Services;
 using Microsoft.Extensions.Logging;
 using System;
 
-namespace DotnetForum.Services
+namespace DotnetForum.WebApi.Services
 {
     public class RandomizerService : IRandomizerService
     {

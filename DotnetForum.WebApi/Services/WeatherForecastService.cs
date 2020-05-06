@@ -1,11 +1,11 @@
-﻿using DotnetForum.Contracts;
+﻿using DotnetForum.Contracts.Services;
 using DotnetForum.Payloads;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DotnetForum.Services
+namespace DotnetForum.WebApi.Services
 {
     public class WeatherForecastService : IWeatherForecastService
     {

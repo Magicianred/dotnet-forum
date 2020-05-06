@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DotnetForum.Payloads\DotnetForum.Payloads.csproj" />
-    <ProjectReference Include="..\DotnetForum.Services\DotnetForum.Services.csproj" />
+    <ProjectReference Include="..\DotnetForum.WebApi\DotnetForum.WebApi.csproj" />
   </ItemGroup>
 
 </Project>

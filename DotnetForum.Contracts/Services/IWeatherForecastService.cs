@@ -1,7 +1,7 @@
 ﻿using DotnetForum.Payloads;
 using System.Collections.Generic;
 
-namespace DotnetForum.Contracts
+namespace DotnetForum.Contracts.Services
 {
     public interface IWeatherForecastService
     {

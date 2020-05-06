@@ -1,11 +1,12 @@
 using DotnetForum.Contracts;
-using DotnetForum.Services;
+using DotnetForum.WebApi.Services;
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Runtime.CompilerServices;
 using Moq;
 using System;
 using System.Linq;
+using DotnetForum.Contracts.Services;
 
 namespace DotnetForum.Test
 {

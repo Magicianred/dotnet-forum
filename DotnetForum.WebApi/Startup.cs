@@ -1,5 +1,6 @@
-using DotnetForum.Contracts;
-using DotnetForum.Services;
+using DotnetForum.Contracts.Services;
+using DotnetForum.WebApi.Database;
+using DotnetForum.WebApi.Services;
 using Grace.AspNetCore.MVC;
 using Grace.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
@@ -7,9 +8,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Reflection;
 using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
+using DotnetForum.Contracts.Repository;
 
 namespace DotnetForum.WebApi
 {
@@ -25,6 +26,9 @@ namespace DotnetForum.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ForumDatabaseContext>(
+                options => options.UseSqlite("Data Source=database.db", b => b.MigrationsAssembly("DotnetForum.WebApi")));
+
             services.AddControllers().AddJsonOptions(options =>
             {
                 options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
@@ -42,6 +46,9 @@ namespace DotnetForum.WebApi
 
                 c.Export<RandomizerService>()
                     .As<IRandomizerService>();
+
+                c.Export<IMembershipRepository>()
+                    .As<MembershipRepository>();
             });
         }
 

@@ -6,6 +6,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DotnetForum.Payloads\DotnetForum.Payloads.csproj" />
+    <ProjectReference Include="..\DotnetForum.Models\DotnetForum.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repository\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
 </Project>
