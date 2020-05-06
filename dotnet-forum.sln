@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetForum.Services", "Dot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetForum.Payloads", "DotnetForum.Payloads\DotnetForum.Payloads.csproj", "{3FDCBBA2-80AC-4B70-8692-10A47272DFBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetForum.Scheduler", "DotnetForum.Scheduler\DotnetForum.Scheduler.csproj", "{FEE20495-0A8D-4107-A491-A8A682BC938A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -100,5 +102,17 @@ Global
 		{3FDCBBA2-80AC-4B70-8692-10A47272DFBB}.Release|x64.Build.0 = Release|Any CPU
 		{3FDCBBA2-80AC-4B70-8692-10A47272DFBB}.Release|x86.ActiveCfg = Release|Any CPU
 		{3FDCBBA2-80AC-4B70-8692-10A47272DFBB}.Release|x86.Build.0 = Release|Any CPU
+		{FEE20495-0A8D-4107-A491-A8A682BC938A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEE20495-0A8D-4107-A491-A8A682BC938A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEE20495-0A8D-4107-A491-A8A682BC938A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FEE20495-0A8D-4107-A491-A8A682BC938A}.Debug|x64.Build.0 = Debug|Any CPU
+		{FEE20495-0A8D-4107-A491-A8A682BC938A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FEE20495-0A8D-4107-A491-A8A682BC938A}.Debug|x86.Build.0 = Debug|Any CPU
+		{FEE20495-0A8D-4107-A491-A8A682BC938A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEE20495-0A8D-4107-A491-A8A682BC938A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEE20495-0A8D-4107-A491-A8A682BC938A}.Release|x64.ActiveCfg = Release|Any CPU
+		{FEE20495-0A8D-4107-A491-A8A682BC938A}.Release|x64.Build.0 = Release|Any CPU
+		{FEE20495-0A8D-4107-A491-A8A682BC938A}.Release|x86.ActiveCfg = Release|Any CPU
+		{FEE20495-0A8D-4107-A491-A8A682BC938A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
