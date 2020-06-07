@@ -1,22 +1,20 @@
-﻿using System;
+﻿using DotnetForum.Data;
+using DotnetForum.Data.Models;
 using System.Linq;
-using DotnetForum.Contracts.Repository;
-using DotnetForum.WebApi.Database;
-using DotnetForum.Models;
 
 namespace DotnetForum.WebApi.Services
 {
     public class MembershipRepository : IMembershipRepository
     {
-        private readonly ForumDatabaseContext _context;
+        private readonly AppDbContext _context;
 
         public MembershipRepository(
-            ForumDatabaseContext context)
+            AppDbContext context)
         {
             _context = context;
         }
 
-        public User GetUserByName(string userName)
+        public Member GetUserByName(string userName)
         {
             return _context.Users.Where(x => x.UserName == userName).Single();
         }

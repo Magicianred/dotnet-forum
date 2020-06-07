@@ -1,16 +1,13 @@
-using DotnetForum.Contracts.Services;
-using DotnetForum.WebApi.Database;
-using DotnetForum.WebApi.Services;
+using DotnetForum.Data;
 using Grace.AspNetCore.MVC;
 using Grace.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Text.Json.Serialization;
-using Microsoft.EntityFrameworkCore;
-using DotnetForum.Contracts.Repository;
 
 namespace DotnetForum.WebApi
 {
@@ -26,8 +23,8 @@ namespace DotnetForum.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ForumDatabaseContext>(
-                options => options.UseSqlite("Data Source=database.db", b => b.MigrationsAssembly("DotnetForum.WebApi")));
+            services.AddDbContext<AppDbContext>(
+                options => options.UseSqlite("Data Source=database.db", b => b.MigrationsAssembly("DotnetForum.Data")));
 
             services.AddControllers().AddJsonOptions(options =>
             {
@@ -38,18 +35,6 @@ namespace DotnetForum.WebApi
         public void ConfigureContainer(IInjectionScope scope)
         {
             scope.SetupMvc();
-
-            scope.Configure(c =>
-            {
-                c.Export<WeatherForecastService>()
-                    .As<IWeatherForecastService>();
-
-                c.Export<RandomizerService>()
-                    .As<IRandomizerService>();
-
-                c.Export<IMembershipRepository>()
-                    .As<MembershipRepository>();
-            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

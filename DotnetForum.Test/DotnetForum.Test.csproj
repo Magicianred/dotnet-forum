@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DotnetForum.Payloads\DotnetForum.Payloads.csproj" />
     <ProjectReference Include="..\DotnetForum.WebApi\DotnetForum.WebApi.csproj" />
   </ItemGroup>
 

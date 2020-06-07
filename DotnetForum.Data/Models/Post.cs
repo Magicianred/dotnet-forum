@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace DotnetForum.Models
+namespace DotnetForum.Data.Models
 {
     [Table("posts")]
     public class Post : BaseEntity
@@ -36,10 +36,10 @@ namespace DotnetForum.Models
 
         public List<Reply> Replies { get; set; }
 
-        public int CategoryId { get; set; }
-        public Category Category { get; set; }
+        public int ForumId { get; set; }
+        public Forum Forum { get; set; }
 
-        public int UserId { get; set; }
-        public User User { get; set; }
+        public int MemberId { get; set; }
+        public Member Member { get; set; }
     }
 }

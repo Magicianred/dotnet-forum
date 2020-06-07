@@ -1,5 +1,4 @@
-﻿using DotnetForum.Payloads;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace DotnetForum.Contracts.Services
 {

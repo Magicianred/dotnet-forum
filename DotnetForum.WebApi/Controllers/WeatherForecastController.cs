@@ -1,5 +1,5 @@
-﻿using DotnetForum.Contracts.Services;
-using DotnetForum.Payloads;
+﻿using DotnetForum.Contracts;
+using DotnetForum.Contracts.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;

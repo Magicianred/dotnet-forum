@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DotnetForum.Contracts.Services
+﻿namespace DotnetForum.Contracts.Services
 {
     public interface IRandomizerService
     {

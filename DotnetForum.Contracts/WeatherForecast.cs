@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace DotnetForum.Payloads
+namespace DotnetForum.Contracts
 {
     [DataContract]
     public class WeatherForecast

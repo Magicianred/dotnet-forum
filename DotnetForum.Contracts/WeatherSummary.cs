@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace DotnetForum.Payloads
+namespace DotnetForum.Contracts
 {
     [DataContract]
     public enum WeatherSummary
